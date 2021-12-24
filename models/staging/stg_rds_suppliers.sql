@@ -1,4 +1,4 @@
 WITH source as (
-    SELECT * FROM "PAGILA_INC"."NORTHWINDS_RDS_PUBLIC"."SUPPLIERS"
+    SELECT * FROM {{source('rds', 'suppliers')}}
 )
 SELECT * FROM source
