@@ -1,0 +1,8 @@
+version: 2 
+sources:
+    - name: rds
+      database: pagila_inc
+      schema: northwinds_rds_public
+      tables:
+        - name: suppliers
+        - name: customers
