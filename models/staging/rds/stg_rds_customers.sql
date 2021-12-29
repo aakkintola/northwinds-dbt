@@ -1,5 +1,5 @@
 WITH source as (
-  SELECT * FROM "PAGILA_INC"."NORTHWINDS_RDS_PUBLIC"."CUSTOMERS"
+  SELECT * FROM {{source('rds', 'customers')}}
 ),
 
 renamed as (
